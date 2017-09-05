@@ -1,4 +1,4 @@
-function [ n ] = annual_profile( monthly_data )
+function [ a_p ] = annual_profile( monthly_data )
 
 %number of years
 %floor rounds down
@@ -12,9 +12,9 @@ for i = 1:N
     end
 end
 
-new_N = 1997:1:2016;
-start_year = find(new_N==2008);
+% new_N = 1997:1:2016;
+% start_year = find(new_N==2008);
+% 
+% n = a_p(:,start_year:end);
 
-n = a_p(:,start_year:end);
 end
-
